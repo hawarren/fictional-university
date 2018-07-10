@@ -1,16 +1,15 @@
 <?php
-function myFirstFunction(){
-    echo "<p> Hello this is my first function</p>";
+$names = array('Brad', 'Hanif', 'Hashim'); 
+$count = 0;
+while($count < count($names)) { //count counts the number of items in the array
+    echo"<li>Hello my name is $names[$count] </li>";
+    $count++;
+    
 }
-myFirstFunction();
-myFirstFunction();
 
-function greet($name, $color){
-    echo "<p>Hi name is $name and my favorite color is $color</p>";
-}
-greet(Mike, blue);
-greet('Jane', 'green');
 ?>
-<h1><?php bloginfo('name'); ?></h1>
-<h2><?php bloginfo('description'); ?></h1>
 
+
+<p>Hi, my name is <?php echo $names[0]?></p>
+
+<li></li>
